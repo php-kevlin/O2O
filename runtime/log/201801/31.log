@@ -1,0 +1,1875 @@
+---------------------------------------------------------------
+[ 2018-01-31T14:45:41+08:00 ] 127.0.0.1 GET /index.php
+[ info ] www.o2o.com/index.php [运行时间：1.080023s][吞吐率：0.93req/s] [内存消耗：3,302.55kb] [文件加载：61]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\web\www\o2o\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\index\index.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'datas',
+  7 => 'meishicates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015765s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.033896s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.060390s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.002469s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.022916s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.003050s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.031649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.061198s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `end_time` > 1517381141  AND `category_id` = 1  AND `city_id` = 2  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.003100s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 1  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 4 [ RunTime:0.002160s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:45:42+08:00 ] 127.0.0.1 GET /index.php
+[ info ] www.o2o.com/index.php [运行时间：0.318986s][吞吐率：3.13req/s] [内存消耗：3,302.62kb] [文件加载：61]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\web\www\o2o\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\index\index.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'datas',
+  7 => 'meishicates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011372s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.025077s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.002589s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.001556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.086429s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.001842s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.001957s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.024902s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `end_time` > 1517381142  AND `category_id` = 1  AND `city_id` = 2  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.002888s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 1  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 4 [ RunTime:0.001625s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:46:47+08:00 ] 127.0.0.1 GET /index.php/bis
+[ info ] www.o2o.com/index.php/bis [运行时间：0.378960s][吞吐率：2.64req/s] [内存消耗：1,951.73kb] [文件加载：52]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-31T14:46:47+08:00 ] 127.0.0.1 GET /index.php/bis/login/index.html
+[ info ] www.o2o.com/index.php/bis/login/index.html [运行时间：0.224578s][吞吐率：4.45req/s] [内存消耗：1,945.91kb] [文件加载：50]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\bis\controller\Login->index[ F:\web\www\o2o\application\bis\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/bis\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-31T14:47:03+08:00 ] 127.0.0.1 GET /index.php/bis/register/index.html
+[ info ] www.o2o.com/index.php/bis/register/index.html [运行时间：0.281107s][吞吐率：3.56req/s] [内存消耗：3,264.43kb] [文件加载：60]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'register',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/bis/login/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\bis\controller\Register->index[ F:\web\www\o2o\application\bis\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/bis\view\register\index.html [ array (
+  0 => 'citys',
+  1 => 'categorys',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010819s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.023425s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `id`  desc [ RunTime:0.002127s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.021706s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `id`  desc [ RunTime:0.001762s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:47:11+08:00 ] 127.0.0.1 GET /index.php/bis/register/
+[ info ] www.o2o.com/index.php/bis/register/ [运行时间：0.136830s][吞吐率：7.31req/s] [内存消耗：3,264.16kb] [文件加载：60]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'register',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'ShockwaveFlash/25.0.0.127',
+  'accept' => '*/*',
+  'referer' => 'http://www.o2o.com/index.php/bis/register/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\bis\controller\Register->index[ F:\web\www\o2o\application\bis\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/bis\view\register\index.html [ array (
+  0 => 'citys',
+  1 => 'categorys',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004313s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.008749s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `id`  desc [ RunTime:0.001006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.010995s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `id`  desc [ RunTime:0.000825s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:47:11+08:00 ] 127.0.0.1 GET /index.php/bis/register/
+[ info ] www.o2o.com/index.php/bis/register/ [运行时间：0.186119s][吞吐率：5.37req/s] [内存消耗：3,264.16kb] [文件加载：60]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'register',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'ShockwaveFlash/25.0.0.127',
+  'accept' => '*/*',
+  'referer' => 'http://www.o2o.com/index.php/bis/register/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\bis\controller\Register->index[ F:\web\www\o2o\application\bis\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/bis\view\register\index.html [ array (
+  0 => 'citys',
+  1 => 'categorys',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006002s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.014371s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `id`  desc [ RunTime:0.001378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.014136s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `id`  desc [ RunTime:0.001296s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:47:13+08:00 ] 127.0.0.1 GET /index.php/bis/login/index.html
+[ info ] www.o2o.com/index.php/bis/login/index.html [运行时间：0.045385s][吞吐率：22.03req/s] [内存消耗：1,945.91kb] [文件加载：50]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\bis\controller\Login->index[ F:\web\www\o2o\application\bis\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/bis\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-31T14:47:32+08:00 ] 127.0.0.1 POST /index.php/bis/login/index.html
+[ info ] www.o2o.com/index.php/bis/login/index.html [运行时间：0.451629s][吞吐率：2.21req/s] [内存消耗：3,218.98kb] [文件加载：65]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'content-length' => '31',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.o2o.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/bis/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=4',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin4',
+  'password' => 'admin4',
+)
+[ info ] [ RUN ] app\bis\controller\Login->index[ F:\web\www\o2o\application\bis\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] F:\web\www\o2o\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006138s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_bis_account` [ RunTime:0.052527s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_bis_account` WHERE  `username` = 'admin4' LIMIT 1 [ RunTime:0.002381s ]
+[ sql ] [ SQL ] UPDATE `o2o_bis_account`  SET `last_login_time`=1517381251,`update_time`=1517381251  WHERE  `id` = 2 [ RunTime:0.089480s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:47:35+08:00 ] 127.0.0.1 GET /index.php/bis/index/index.html
+[ info ] www.o2o.com/index.php/bis/index/index.html [运行时间：0.184635s][吞吐率：5.42req/s] [内存消耗：2,270.70kb] [文件加载：54]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/bis/login/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\bis\controller\Index->index[ F:\web\www\o2o\application\bis\controller\Index.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/bis\view\index\index.html [ array (
+  0 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-31T14:47:40+08:00 ] 127.0.0.1 GET /index.php/bis/location/add.html
+[ info ] www.o2o.com/index.php/bis/location/add.html [运行时间：0.159036s][吞吐率：6.29req/s] [内存消耗：3,286.66kb] [文件加载：63]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'location',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/bis/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\bis\controller\Location->add[ F:\web\www\o2o\application\bis\controller\Location.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/bis\view\location\add.html [ array (
+  0 => 'citys',
+  1 => 'categorys',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003779s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.009773s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `id`  desc [ RunTime:0.001182s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.009203s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `id`  desc [ RunTime:0.000655s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:47:45+08:00 ] 127.0.0.1 GET /index.php/bis/location/
+[ info ] www.o2o.com/index.php/bis/location/ [运行时间：0.381159s][吞吐率：2.62req/s] [内存消耗：3,205.29kb] [文件加载：62]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'location',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'ShockwaveFlash/25.0.0.127',
+  'accept' => '*/*',
+  'referer' => 'http://www.o2o.com/index.php/bis/location/add.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\bis\controller\Location->index[ F:\web\www\o2o\application\bis\controller\Location.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/bis\view\location\index.html [ array (
+  0 => 'bislocations',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011873s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_bis_location` [ RunTime:0.054597s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_bis_location` WHERE  `bis_id` = 9  AND `status` = 1 ORDER BY `id`  desc [ RunTime:0.002675s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:47:45+08:00 ] 127.0.0.1 GET /index.php/bis/location/index.html
+[ info ] www.o2o.com/index.php/bis/location/index.html [运行时间：0.484567s][吞吐率：2.06req/s] [内存消耗：3,205.56kb] [文件加载：62]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'location',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/bis/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\bis\controller\Location->index[ F:\web\www\o2o\application\bis\controller\Location.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/bis\view\location\index.html [ array (
+  0 => 'bislocations',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010857s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_bis_location` [ RunTime:0.027369s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_bis_location` WHERE  `bis_id` = 9  AND `status` = 1 ORDER BY `id`  desc [ RunTime:0.002639s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:48:03+08:00 ] 127.0.0.1 GET /index.php
+[ info ] www.o2o.com/index.php [运行时间：0.148003s][吞吐率：6.76req/s] [内存消耗：3,320.44kb] [文件加载：62]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\web\www\o2o\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\index\index.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'datas',
+  7 => 'meishicates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003782s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.026596s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.001044s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.009900s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.009600s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `end_time` > 1517381283  AND `category_id` = 1  AND `city_id` = 2  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.001710s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 1  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 4 [ RunTime:0.001031s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:48:04+08:00 ] 127.0.0.1 GET /index.php
+[ info ] www.o2o.com/index.php [运行时间：0.237540s][吞吐率：4.21req/s] [内存消耗：3,319.89kb] [文件加载：62]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\web\www\o2o\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\index\index.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'datas',
+  7 => 'meishicates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005828s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.015395s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.001150s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.001084s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.013677s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.001075s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.001061s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.015603s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `end_time` > 1517381284  AND `category_id` = 1  AND `city_id` = 2  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.001860s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 1  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 4 [ RunTime:0.001024s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:48:18+08:00 ] 127.0.0.1 GET /index.php/index/detail/index.html?id=5
+[ info ] www.o2o.com/index.php/index/detail/index.html?id=5 [运行时间：0.431958s][吞吐率：2.32req/s] [内存消耗：3,330.84kb] [文件加载：63]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'detail',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=7',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Detail->index[ F:\web\www\o2o\application\index\controller\Detail.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\detail\index.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'deal',
+  7 => 'category',
+  8 => 'location',
+  9 => 'overplus',
+  10 => 'flag',
+  11 => 'timedata',
+  12 => 'mapstr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012296s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.026038s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.002721s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.002591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.028584s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.001851s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.001987s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.025396s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.022996s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001891s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_bis_location` [ RunTime:0.023161s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_bis_location` WHERE  `id` IN (7,2)  AND `status` = 1 [ RunTime:0.002686s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:48:19+08:00 ] 127.0.0.1 GET /index.php/index/map/getmapimage.html?data=116.40339274324%2C39.914252515311
+[ info ] www.o2o.com/index.php/index/map/getmapimage.html?data=116.40339274324%2C39.914252515311 [运行时间：0.438683s][吞吐率：2.28req/s] [内存消耗：1,792.49kb] [文件加载：45]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'map',
+    2 => 'getmapimage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/detail/index.html?id=5',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=8',
+)
+[ info ] [ PARAM ] array (
+  'data' => '116.40339274324,39.914252515311',
+)
+[ info ] [ RUN ] app\index\controller\Map->getMapImage[ F:\web\www\o2o\application\index\controller\Map.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-31T14:48:19+08:00 ] 127.0.0.1 GET /index.php/index/detail/index.html?id=5
+[ info ] www.o2o.com/index.php/index/detail/index.html?id=5 [运行时间：0.182841s][吞吐率：5.47req/s] [内存消耗：3,330.41kb] [文件加载：63]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'detail',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/detail/index.html?id=5',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Detail->index[ F:\web\www\o2o\application\index\controller\Detail.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\detail\index.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'deal',
+  7 => 'category',
+  8 => 'location',
+  9 => 'overplus',
+  10 => 'flag',
+  11 => 'timedata',
+  12 => 'mapstr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004274s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.012740s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.010817s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.001078s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.019769s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.001661s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_bis_location` [ RunTime:0.010422s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_bis_location` WHERE  `id` IN (7,2)  AND `status` = 1 [ RunTime:0.000868s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:48:28+08:00 ] 127.0.0.1 GET /index.php/index/order/confirm.html?id=5
+[ info ] www.o2o.com/index.php/index/order/confirm.html?id=5 [运行时间：0.259867s][吞吐率：3.85req/s] [内存消耗：3,254.80kb] [文件加载：62]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'confirm',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/detail/index.html?id=5',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Order->confirm[ F:\web\www\o2o\application\index\controller\Order.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'code',
+  7 => 'msg',
+  8 => 'data',
+  9 => 'url',
+  10 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010065s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.035318s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.001916s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.001794s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.022854s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.001910s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.002294s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:48:31+08:00 ] 127.0.0.1 GET /index.php/index/user/login.html
+[ info ] www.o2o.com/index.php/index/user/login.html [运行时间：0.139554s][吞吐率：7.17req/s] [内存消耗：2,279.09kb] [文件加载：51]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/order/confirm.html?id=5',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->login[ F:\web\www\o2o\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\user\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-31T14:48:50+08:00 ] 127.0.0.1 POST /index.php/index/user/logincheck.html
+[ info ] www.o2o.com/index.php/index/user/logincheck.html [运行时间：0.269589s][吞吐率：3.71req/s] [内存消耗：3,229.87kb] [文件加载：63]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'logincheck',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'content-length' => '44',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.o2o.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/user/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=10',
+)
+[ info ] [ PARAM ] array (
+  'username' => '用户2',
+  'password' => '111111',
+)
+[ info ] [ RUN ] app\index\controller\User->logincheck[ F:\web\www\o2o\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] F:\web\www\o2o\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010374s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_user` [ RunTime:0.060538s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_user` WHERE  `username` = '用户2' LIMIT 1 [ RunTime:0.002386s ]
+[ sql ] [ SQL ] UPDATE `o2o_user`  SET `last_login_time`=1517381329,`update_time`=1517381330  WHERE  `id` = 2 [ RunTime:0.039317s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:48:53+08:00 ] 127.0.0.1 GET /index.php/index/index/index.html
+[ info ] www.o2o.com/index.php/index/index/index.html [运行时间：0.324968s][吞吐率：3.08req/s] [内存消耗：3,340.59kb] [文件加载：63]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/user/logincheck.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=11',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\web\www\o2o\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\index\index.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'datas',
+  7 => 'meishicates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010568s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.033459s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.001876s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.002078s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.023399s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.001797s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.002009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.023707s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `end_time` > 1517381333  AND `category_id` = 1  AND `city_id` = 2  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.002902s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 1  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 4 [ RunTime:0.001625s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:48:54+08:00 ] 127.0.0.1 GET /index.php/index/index/index.html
+[ info ] www.o2o.com/index.php/index/index/index.html [运行时间：0.329572s][吞吐率：3.03req/s] [内存消耗：3,340.13kb] [文件加载：63]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=12',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\web\www\o2o\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\index\index.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'datas',
+  7 => 'meishicates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009665s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.022604s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.001711s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.001643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.023393s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.001736s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.001718s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.038323s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `end_time` > 1517381334  AND `category_id` = 1  AND `city_id` = 2  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.003132s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 1  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 4 [ RunTime:0.001649s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:49:02+08:00 ] 127.0.0.1 GET /index.php/index/detail/index.html?id=3
+[ info ] www.o2o.com/index.php/index/detail/index.html?id=3 [运行时间：0.332680s][吞吐率：3.01req/s] [内存消耗：3,346.67kb] [文件加载：64]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'detail',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=12',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Detail->index[ F:\web\www\o2o\application\index\controller\Detail.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\detail\index.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'deal',
+  7 => 'category',
+  8 => 'location',
+  9 => 'overplus',
+  10 => 'flag',
+  11 => 'timedata',
+  12 => 'mapstr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011032s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.034558s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.001981s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.001814s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.024916s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.001808s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.001969s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.031353s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.002483s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001758s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_bis_location` [ RunTime:0.024397s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_bis_location` WHERE  `id` IN (2)  AND `status` = 1 [ RunTime:0.002211s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:49:02+08:00 ] 127.0.0.1 GET /index.php/index/map/getmapimage.html?data=116.40339274324%2C39.914252515311
+[ info ] www.o2o.com/index.php/index/map/getmapimage.html?data=116.40339274324%2C39.914252515311 [运行时间：0.243420s][吞吐率：4.11req/s] [内存消耗：1,792.49kb] [文件加载：45]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'map',
+    2 => 'getmapimage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/detail/index.html?id=3',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=13',
+)
+[ info ] [ PARAM ] array (
+  'data' => '116.40339274324,39.914252515311',
+)
+[ info ] [ RUN ] app\index\controller\Map->getMapImage[ F:\web\www\o2o\application\index\controller\Map.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-31T14:49:03+08:00 ] 127.0.0.1 GET /index.php/index/detail/index.html?id=3
+[ info ] www.o2o.com/index.php/index/detail/index.html?id=3 [运行时间：0.325546s][吞吐率：3.07req/s] [内存消耗：3,346.21kb] [文件加载：64]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'detail',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/detail/index.html?id=3',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=13',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Detail->index[ F:\web\www\o2o\application\index\controller\Detail.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\detail\index.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'deal',
+  7 => 'category',
+  8 => 'location',
+  9 => 'overplus',
+  10 => 'flag',
+  11 => 'timedata',
+  12 => 'mapstr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006128s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.066829s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.001971s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.001884s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.022275s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.001865s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.001905s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.022787s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.002082s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_bis_location` [ RunTime:0.022924s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_bis_location` WHERE  `id` IN (2)  AND `status` = 1 [ RunTime:0.001855s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:49:11+08:00 ] 127.0.0.1 GET /index.php/index/detail/index.html?id=3
+[ info ] www.o2o.com/index.php/index/detail/index.html?id=3 [运行时间：0.366813s][吞吐率：2.73req/s] [内存消耗：3,346.67kb] [文件加载：64]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'detail',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=13',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Detail->index[ F:\web\www\o2o\application\index\controller\Detail.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\detail\index.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'deal',
+  7 => 'category',
+  8 => 'location',
+  9 => 'overplus',
+  10 => 'flag',
+  11 => 'timedata',
+  12 => 'mapstr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012324s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.058525s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.001898s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.002407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.026172s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.001854s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.002084s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.024220s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.002174s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001588s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_bis_location` [ RunTime:0.023054s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_bis_location` WHERE  `id` IN (2)  AND `status` = 1 [ RunTime:0.001911s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:49:11+08:00 ] 127.0.0.1 GET /index.php/index/map/getmapimage.html?data=116.40339274324%2C39.914252515311
+[ info ] www.o2o.com/index.php/index/map/getmapimage.html?data=116.40339274324%2C39.914252515311 [运行时间：0.348220s][吞吐率：2.87req/s] [内存消耗：1,792.49kb] [文件加载：45]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'map',
+    2 => 'getmapimage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/detail/index.html?id=3',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=14',
+)
+[ info ] [ PARAM ] array (
+  'data' => '116.40339274324,39.914252515311',
+)
+[ info ] [ RUN ] app\index\controller\Map->getMapImage[ F:\web\www\o2o\application\index\controller\Map.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-31T14:49:12+08:00 ] 127.0.0.1 GET /index.php/index/detail/index.html?id=3
+[ info ] www.o2o.com/index.php/index/detail/index.html?id=3 [运行时间：0.387630s][吞吐率：2.58req/s] [内存消耗：3,346.21kb] [文件加载：64]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'detail',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/detail/index.html?id=3',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=14',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Detail->index[ F:\web\www\o2o\application\index\controller\Detail.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\detail\index.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'deal',
+  7 => 'category',
+  8 => 'location',
+  9 => 'overplus',
+  10 => 'flag',
+  11 => 'timedata',
+  12 => 'mapstr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010055s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.112823s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.002312s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.001660s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.019079s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.001604s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.001277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.017167s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.002149s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001079s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_bis_location` [ RunTime:0.014884s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_bis_location` WHERE  `id` IN (2)  AND `status` = 1 [ RunTime:0.001210s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:49:19+08:00 ] 127.0.0.1 GET /index.php/index/order/confirm.html?id=3
+[ info ] www.o2o.com/index.php/index/order/confirm.html?id=3 [运行时间：0.164405s][吞吐率：6.08req/s] [内存消耗：3,303.05kb] [文件加载：63]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'confirm',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/detail/index.html?id=3',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=14',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Order->confirm[ F:\web\www\o2o\application\index\controller\Order.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\order\confirm.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'count',
+  7 => 'deal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003808s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.026431s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.001061s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.009691s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.000769s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.009419s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000839s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:49:20+08:00 ] 127.0.0.1 GET /index.php/index/order/confirm.html?id=3
+[ info ] www.o2o.com/index.php/index/order/confirm.html?id=3 [运行时间：0.289164s][吞吐率：3.46req/s] [内存消耗：3,302.59kb] [文件加载：63]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'confirm',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/order/confirm.html?id=3',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=15',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Order->confirm[ F:\web\www\o2o\application\index\controller\Order.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\order\confirm.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'count',
+  7 => 'deal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009452s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.023805s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.001896s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.001900s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.022248s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.001807s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.002039s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.024792s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.002245s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:49:56+08:00 ] 127.0.0.1 GET /index.php/index/order/index.html?id=3&deal_count=3&total_price=45
+[ info ] www.o2o.com/index.php/index/order/index.html?id=3&deal_count=3&total_price=45 [运行时间：0.291839s][吞吐率：3.43req/s] [内存消耗：3,290.96kb] [文件加载：65]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/order/confirm.html?id=3',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=15',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+  'deal_count' => '3',
+  'total_price' => '45',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Order->index[ F:\web\www\o2o\application\index\controller\Order.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007689s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.011240s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.001011s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.011455s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.001166s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.012610s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_order` [ RunTime:0.045881s ]
+[ sql ] [ SQL ] INSERT INTO `o2o_order` (`out_trade_no` , `user_id` , `username` , `deal_id` , `deal_count` , `total_price` , `referer` , `status` , `create_time` , `update_time`) VALUES ('151738139660845814' , 2 , '用户2' , 3 , 3 , 45 , 'http://www.o2o.com/index.php/index/order/confirm.html?id=3' , 1 , 1517381396 , 1517381396) [ RunTime:0.070689s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:49:56+08:00 ] 127.0.0.1 GET /index.php/index/order/confirm.html?id=3
+[ info ] www.o2o.com/index.php/index/order/confirm.html?id=3 [运行时间：0.339439s][吞吐率：2.95req/s] [内存消耗：3,303.05kb] [文件加载：63]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'confirm',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/order/confirm.html?id=3',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=15',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Order->confirm[ F:\web\www\o2o\application\index\controller\Order.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\order\confirm.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'count',
+  7 => 'deal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003875s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.011866s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.003094s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.026292s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.001357s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.001469s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.027043s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001328s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:49:56+08:00 ] 127.0.0.1 GET /index.php/index/pay/index.html?id=1
+[ info ] www.o2o.com/index.php/index/pay/index.html?id=1 [运行时间：0.080961s][吞吐率：12.35req/s] [内存消耗：1,861.80kb] [文件加载：46]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'pay',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/order/confirm.html?id=3',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=15',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Pay->index[ F:\web\www\o2o\application\index\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-31T14:49:58+08:00 ] 127.0.0.1 GET /index.php/index/order/confirm.html?id=3
+[ info ] www.o2o.com/index.php/index/order/confirm.html?id=3 [运行时间：0.179503s][吞吐率：5.57req/s] [内存消耗：3,302.59kb] [文件加载：63]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'confirm',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/order/confirm.html?id=3',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=17',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Order->confirm[ F:\web\www\o2o\application\index\controller\Order.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\order\confirm.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'count',
+  7 => 'deal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003958s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.010294s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.001551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.018219s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.001472s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.001548s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.019370s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001695s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:50:00+08:00 ] 127.0.0.1 GET /index.php/index/order/index.html?id=3&deal_count=1&total_price=15
+[ info ] www.o2o.com/index.php/index/order/index.html?id=3&deal_count=1&total_price=15 [运行时间：0.396805s][吞吐率：2.52req/s] [内存消耗：3,290.96kb] [文件加载：65]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/order/confirm.html?id=3',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=17',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+  'deal_count' => '1',
+  'total_price' => '15',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Order->index[ F:\web\www\o2o\application\index\controller\Order.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013766s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.048938s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.003322s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.001944s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.030003s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.001421s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.001728s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.027605s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.002204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_order` [ RunTime:0.025999s ]
+[ sql ] [ SQL ] INSERT INTO `o2o_order` (`out_trade_no` , `user_id` , `username` , `deal_id` , `deal_count` , `total_price` , `referer` , `status` , `create_time` , `update_time`) VALUES ('151738140045250325' , 2 , '用户2' , 3 , 1 , 15 , 'http://www.o2o.com/index.php/index/order/confirm.html?id=3' , 1 , 1517381400 , 1517381400) [ RunTime:0.044301s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:50:00+08:00 ] 127.0.0.1 GET /index.php/index/order/confirm.html?id=3
+[ info ] www.o2o.com/index.php/index/order/confirm.html?id=3 [运行时间：0.478880s][吞吐率：2.09req/s] [内存消耗：3,303.05kb] [文件加载：63]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'confirm',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/order/confirm.html?id=3',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=17',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Order->confirm[ F:\web\www\o2o\application\index\controller\Order.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\order\confirm.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'count',
+  7 => 'deal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011112s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.029150s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.001823s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.003111s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.024967s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.001397s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.002364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.017582s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001363s ]
+---------------------------------------------------------------
+[ 2018-01-31T14:50:00+08:00 ] 127.0.0.1 GET /index.php/index/pay/index.html?id=1
+[ info ] www.o2o.com/index.php/index/pay/index.html?id=1 [运行时间：0.081071s][吞吐率：12.33req/s] [内存消耗：1,861.80kb] [文件加载：46]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'pay',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/order/confirm.html?id=3',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=17',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Pay->index[ F:\web\www\o2o\application\index\controller\Pay.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-31T14:50:01+08:00 ] 127.0.0.1 GET /index.php/index/order/confirm.html?id=3
+[ info ] www.o2o.com/index.php/index/order/confirm.html?id=3 [运行时间：0.341809s][吞吐率：2.93req/s] [内存消耗：3,302.59kb] [文件加载：63]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'confirm',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/index/order/confirm.html?id=3',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=193667883.1719896384896984800.1513937200457.5676; pgv_pvi=6436300800; Huiskin=blue; PHPSESSID=vv0skl15povqhbdr33c8mtt3jh; monitor_count=19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Order->confirm[ F:\web\www\o2o\application\index\controller\Order.php ]
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/index\view\order\confirm.html [ array (
+  0 => 'cats',
+  1 => 'citys',
+  2 => 'city',
+  3 => 'user',
+  4 => 'controller',
+  5 => 'title',
+  6 => 'count',
+  7 => 'deal',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011084s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.035208s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `status` = 1  AND `parent_id` > 0 ORDER BY `id`  desc [ RunTime:0.001970s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `uname` = 'beijing' LIMIT 1 [ RunTime:0.001963s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.026459s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  asc,`id`  desc LIMIT 5 [ RunTime:0.001699s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (1,5,2,7,6)  AND `status` = 1 ORDER BY `listorder`  desc,`id`  desc [ RunTime:0.002477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.026122s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.002228s ]

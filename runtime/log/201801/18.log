@@ -1,0 +1,182 @@
+---------------------------------------------------------------
+[ 2018-01-18T20:57:42+08:00 ] 127.0.0.1 GET /index.php/bis/index/index.html
+[ info ] www.o2o.com/index.php/bis/index/index.html [运行时间：0.820823s][吞吐率：1.22req/s] [内存消耗：1,643.89kb] [文件加载：52]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3253.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-18T20:57:42+08:00 ] 127.0.0.1 GET /index.php/bis/login/index.html
+[ info ] www.o2o.com/index.php/bis/login/index.html [运行时间：0.143096s][吞吐率：6.99req/s] [内存消耗：1,636.33kb] [文件加载：50]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3253.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=lbh27mfnsrmu6r4169onm7bac5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\bis\controller\Login->index[ F:\web\www\o2o\application\bis\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/bis\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-18T20:57:47+08:00 ] 127.0.0.1 GET /index.php/bis/register/index.html
+[ info ] www.o2o.com/index.php/bis/register/index.html [运行时间：0.783707s][吞吐率：1.28req/s] [内存消耗：2,743.06kb] [文件加载：60]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'register',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3253.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.o2o.com/index.php/bis/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=lbh27mfnsrmu6r4169onm7bac5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\bis\controller\Register->index[ F:\web\www\o2o\application\bis\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/bis\view\register\index.html [ array (
+  0 => 'citys',
+  1 => 'categorys',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.189635s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.295522s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `id`  desc [ RunTime:0.008290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.052682s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `id`  desc [ RunTime:0.000879s ]
+---------------------------------------------------------------
+[ 2018-01-18T20:57:49+08:00 ] 127.0.0.1 GET /index.php/bis/register/
+[ info ] www.o2o.com/index.php/bis/register/ [运行时间：0.094802s][吞吐率：10.55req/s] [内存消耗：2,742.55kb] [文件加载：60]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'register',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3253.3 Safari/537.36',
+  'x-requested-with' => 'ShockwaveFlash/28.0.0.137',
+  'accept' => '*/*',
+  'referer' => 'http://www.o2o.com/index.php/bis/register/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=lbh27mfnsrmu6r4169onm7bac5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\bis\controller\Register->index[ F:\web\www\o2o\application\bis\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/bis\view\register\index.html [ array (
+  0 => 'citys',
+  1 => 'categorys',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004297s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.009972s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `id`  desc [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.015116s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `id`  desc [ RunTime:0.000648s ]
+---------------------------------------------------------------
+[ 2018-01-18T20:57:49+08:00 ] 127.0.0.1 GET /index.php/bis/register/
+[ info ] www.o2o.com/index.php/bis/register/ [运行时间：0.093790s][吞吐率：10.66req/s] [内存消耗：2,742.55kb] [文件加载：60]
+[ info ] [ LANG ] F:\web\www\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'register',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3253.3 Safari/537.36',
+  'x-requested-with' => 'ShockwaveFlash/28.0.0.137',
+  'accept' => '*/*',
+  'referer' => 'http://www.o2o.com/index.php/bis/register/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=lbh27mfnsrmu6r4169onm7bac5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\bis\controller\Register->index[ F:\web\www\o2o\application\bis\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\web\www\o2o\public/../application/bis\view\register\index.html [ array (
+  0 => 'citys',
+  1 => 'categorys',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005198s ] mysql:host=127.0.0.1;port=8888;dbname=nuomi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_city` [ RunTime:0.013115s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_city` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `id`  desc [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.013441s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `id`  desc [ RunTime:0.000462s ]
